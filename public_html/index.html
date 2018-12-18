@@ -12,7 +12,7 @@ and open the template in the editor.
     </head>
     <body>
         <div id="div_1" style="font-size: 35px">....titolo assente....</div>
-        <div>secondo div---</div>
+        <div id="div_ora">ma che ore sono? </div>
         
         user: <input id="input_testo" placeholder="inserisci testo" type="text" />
         
@@ -20,7 +20,7 @@ and open the template in the editor.
         
         <button onclick="impostaTitolo()">Imposta il titolo...</button>
         <div></div>
-        <button>ok</button>
+        <button onclick="document.getElementById('div_ora').innerHTML=Date();">che ore sono</button>
     </body>
 </html>
 
